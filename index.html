@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<!-- define angular app -->
+<html ng-app="kossiAdanou">
+
+    <head>
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- SCROLLS -->
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <!--Import materialize.css-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+        <link rel="stylesheet" href="css/style.css" />
+
+        <title>ADANOU Kossi: Ing&eacute;nieur polytechnicien de conception informatique & Jeune Entrepreneur</title>
+    </head>
+
+    <!-- define angular controller -->
+    <body ng-controller="mainController">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7">
+                    <p>
+
+
+                        <h1>
+                            Kossi ADANOU
+                        </h1>
+                        <h3>
+                            Ing&eacute;nieur polytechnicien &AMP; Jeune Entrepreneur
+                        </h3>
+                        <div>
+                            <i class="fa fa-phone"></i> +237 672 744 156
+    
+                            <i class="fa fa-envelope"></i> kossi.adanou@immoask.com
+                            <a href="https://twitter.com/kossiadanou"><i class="fa fa-twitter"></i> @kossiadanou</a> 
+                            <a href="https://github.com/AJKossi"><i class="fa fa-github"></i> @AJKossi</a> 
+                        </div>
+                    </p> 
+                </div>
+                <div class="col-md-4">
+
+                </div> 
+                <div class="ml-md-1">
+                    <img src="images/ADANOU.jpg" height="100" class="circle">
+                </div> 
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card-columns">
+                        <a href="#experiences" title="Expériences professionnelles et personnelles">
+                            <div class="card jumbotron" style="background-image: url(images/experience-pro.png)">
+                                Exp&eacute;riences
+
+                            </div> 
+                        </a>
+                        <a href="#centres-interets">
+                            <div class="card jumbotron" style="background-image: url(images/interet.png)">
+                                Centres d&apos;interets
+                            </div> 
+                        </a>
+                        <a href="#references">
+                            <div class="card jumbotron" style="background-image: url(images/personnes.png)">
+                                Personnes ressources
+                            </div>
+                        </a>
+                        <a href="#vie-journee">
+                            <div class="card jumbotron" style="background-image: url(images/journee.jpg)">
+
+                                Journ&eacute;e
+
+                            </div>  
+                        </a>
+
+                        <a href="#distinctions-prix" title="Prix et disctinctions">
+                            <div class="card jumbotron" style="background-image: url(images/disctinction.png)">
+                                Prix et Distinctions
+                            </div> 
+                        </a>
+
+                        <a href="#travaux-scientifiques-projets" title="Travaux scientifiques et Projets">
+                            <div class="card jumbotron" style="background-image: url(images/projet.jpg)">
+                                Travaux scientifiques et Projets
+                            </div>  
+                        </a>
+                    </div>
+
+                </div> 
+                <div class="col-md-6 card" id="page-accueil">
+                    <!-- angular templating -->
+                    <!-- this is where content will be injected -->
+                    <div ng-view>
+                    </div>
+                </div> 
+                <div class="col-md-3">
+                    <div class="card-columns">
+                        <a href="#competences">
+                            <div class="card jumbotron" style="background-image: url(images/competences.png)">
+                                Comp&eacute;tences informatiques
+                            </div> 
+                        </a>
+
+                        <a href="#education" title="Education">
+                            <div class="card jumbotron" style="background-image: url(images/education.jpg)">
+                                Education
+                            </div>  
+                        </a>
+                        <a href="#langues" title="Langues: parl&eacute;es,&eacute;crites">
+                            <div class="card jumbotron" style="background-image: url(images/langue.jpg)">
+                                Langues
+                            </div>
+                        </a>
+                        <a href="#volontariat" title="Volontariat et activités en déhors de mon domaine">
+                            <div class="card jumbotron" style="background-image: url(images/volontariat.jpg)">
+
+                                Volontariats et Activites extra-domaines
+
+                            </div> 
+                        </a>
+
+                        <a href="#technologie-economie-politique" title="Actualités technologiques,economiques et politiques">
+                            <div class="card jumbotron" style="background-image: url(images/actualite.jpg)">
+                                Actualit&eacute;s: Technologies, Economie et Politiques
+                            </div>  
+                        </a>
+
+
+                    </div>
+                </div> 
+            </div>
+        </div>
+        
+        <footer class="text-center">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            La conception de cette vitrine personnelle d'exposition vous interresse ? 
+                            Alors n'hesitez pas &agrave; me contacter par <a href="mailto:kossi.adanou@polytechnique.cm?Subject=Developpement%20Vitrine%20Personnelle" target="_top" style="color: #937e79"><i class="fa fa-envelope"></i></a> 
+                            ou par <i class="fa fa-phone"></i> +228 9310 2163 | +228 9752 3944
+                        </p> 
+                    </div>
+                    <div class="col-md-2">
+
+                    </div>
+                </div>  
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
